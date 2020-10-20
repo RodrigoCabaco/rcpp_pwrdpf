@@ -63,19 +63,19 @@ namespace rcpp
             ascii.WriteConsole("rcpp");
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("\n");
-            Console.WriteLine("First Name > ");  
+            Console.Write("First Name > ");  
             firstName = Console.ReadLine();
             initialList.Add(firstName);
-            Console.WriteLine("Last Name >");
+            Console.Write("Last Name >");
             lastName = Console.ReadLine();
             initialList.Add(lastName); 
-            Console.WriteLine("User/Nickname >");
+            Console.Write("User/Nickname >");
             username = Console.ReadLine();
             initialList.Add(username);
-            Console.WriteLine("Year of Birth (Optional) >");
+            Console.Write("Year of Birth (Optional) >");
             yearOfBirth = Console.ReadLine();
             initialList.Add(yearOfBirth);
-            Console.WriteLine("Additional Words (Optional) [Separated by ,] >");
+            Console.Write("Additional Words (Optional) [Separated by ,] >");
                 foreach(var x in Console.ReadLine().Split(','))
                 {
                     initialList.Add(x);
