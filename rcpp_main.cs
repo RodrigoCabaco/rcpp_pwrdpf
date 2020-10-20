@@ -99,13 +99,45 @@ namespace rcpp
                     generateList = File.AppendText(firstName+"_"+lastName+".txt");
                     passwordList.Add(f+l);
                     passwordList.Add(f+"_"+l);
-                    passwordList.Add(f+"_"+l+"_");
+                    passwordList.Add(f+"_"+l+"_"); 
                     passwordList.Add(f+l+"_");
+                    passwordList.Add(f);
+                    passwordList.Add(l);
+                    for(int i = 0;i<100;i++)
+                    {
+                    passwordList.Add(f+l+i);
+                    passwordList.Add(f+"_"+l+i);
+                    passwordList.Add(f+"_"+l+"_"+i); 
+                    passwordList.Add(f+l+"_"+i);      
+                    passwordList.Add(f+"_"+i);
+                    passwordList.Add(l+i);
+                    passwordList.Add(f+i);
+                    passwordList.Add(l+"_"+i);       
+                    passwordList.Add(firstName+"_"+i);
+                    passwordList.Add(lastName+"_"+i);
+                    passwordList.Add(firstName+lastName+"_"+i);       
+                    }
+                    for(int i = 0;i<120;i++)
+                    {
+                    i = i+1900;
+                    passwordList.Add(f+l+i);
+                    passwordList.Add(f+"_"+l+i);
+                    passwordList.Add(f+"_"+l+"_"+i); 
+                    passwordList.Add(f+l+"_"+i);      
+                    passwordList.Add(f+"_"+i);
+                    passwordList.Add(l+i);
+                    passwordList.Add(f+i);
+                    passwordList.Add(l+"_"+i);       
+                    passwordList.Add(firstName+"_"+i);
+                    passwordList.Add(lastName+"_"+i);
+                    passwordList.Add(firstName+lastName+"_"+i);       
+                    }
                     int counter = passwordList.Count;
                     counter--;
                     Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
                     generateList.WriteLine(passwordList[counter]);
                     generateList.Close();
+
                 }
             }
                 passwordList.Add(lastName+firstName+yearOfBirth);
