@@ -66,16 +66,16 @@ namespace rcpp
             Console.Write("First Name > ");  
             firstName = Console.ReadLine();
             initialList.Add(firstName);
-            Console.Write("Last Name >");
+            Console.Write("Last Name > ");
             lastName = Console.ReadLine();
             initialList.Add(lastName); 
-            Console.Write("User/Nickname >");
+            Console.Write("User/Nickname > ");
             username = Console.ReadLine();
             initialList.Add(username);
-            Console.Write("Year of Birth (Optional) >");
+            Console.Write("Year of Birth (Optional) > ");
             yearOfBirth = Console.ReadLine();
             initialList.Add(yearOfBirth);
-            Console.Write("Additional Words (Optional) [Separated by ,] >");
+            Console.Write("Additional Words (Optional) [Separated by ,] > ");
                 foreach(var x in Console.ReadLine().Split(','))
                 {
                     initialList.Add(x);
@@ -88,7 +88,7 @@ namespace rcpp
         void ShowHelp()
         {
             Console.WriteLine("Arguments:");
-            Console.WriteLine("    -h (show this menu)\n    -u [username]\n    -i (interface for profiling)\n    -d (use default settings for profiling [reccomended])");
+            Console.WriteLine("    -h (show this menu)\n    -i (interface for profiling)");
         }
         void GenerateWorldList()
         {
@@ -110,6 +110,7 @@ namespace rcpp
                     generateList.Close();
                     for(int i = 0;i<100;i++)
                     {
+                    generateList = File.AppendText(firstName+"_"+lastName+".txt");
                     passwordList.Add(f+l+i);
                     passwordList.Add(f+"_"+l+i);
                     passwordList.Add(f+"_"+l+"_"+i); 
