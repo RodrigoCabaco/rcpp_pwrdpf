@@ -117,9 +117,9 @@ namespace rcpp
                     passwordList.Add(lastName+"_"+i);
                     passwordList.Add(firstName+lastName+"_"+i);       
                     }
-                    for(int i = 0;i<120;i++)
+                    for(int j = 0;j<80;j++)
                     {
-                    i = i+1900;
+                    int i = j + 1960;
                     passwordList.Add(f+l+i);
                     passwordList.Add(f+"_"+l+i);
                     passwordList.Add(f+"_"+l+"_"+i); 
