@@ -20,6 +20,7 @@ sudo apt-get install -y dotnet-runtime-3.1
 
 dotnet run
 
-cp bin/Debug/netcoreapp3.1/rcpp rcpp
-cp bin/Debug/netcoreapp3.1/TextToAsciiArt.dll TextToAsciiArt.dll
-cp bin/Debug/netcoreapp3.1/rcpp.dll rcpp.dll 
+cp bin/Debug/netcoreapp3.1/* 
+
+clear
+echo "Installation Finish run ./rcpp -h"
