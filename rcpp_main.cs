@@ -103,6 +103,11 @@ namespace rcpp
                     passwordList.Add(f+l+"_");
                     passwordList.Add(f);
                     passwordList.Add(l);
+                    int counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
+                    generateList.Close();
                     for(int i = 0;i<100;i++)
                     {
                     passwordList.Add(f+l+i);
@@ -115,7 +120,12 @@ namespace rcpp
                     passwordList.Add(l+"_"+i);       
                     passwordList.Add(firstName+"_"+i);
                     passwordList.Add(lastName+"_"+i);
-                    passwordList.Add(firstName+lastName+"_"+i);       
+                    passwordList.Add(firstName+lastName+"_"+i);   
+                    counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
+                    generateList.Close();    
                     }
                   /*  for(int j = 0;j<80;j++)
                     {
@@ -140,6 +150,8 @@ namespace rcpp
 
                 }*/
             }
+
+        }
                 passwordList.Add(lastName+firstName+yearOfBirth);
             
                 passwordList.Add(lastName+firstName+yearOfBirth+"?");
@@ -161,7 +173,6 @@ namespace rcpp
                 passwordList.Add(username+"_"+yearOfBirth);
                 
                 passwordList.Add(username+"_"+yearOfBirth+"?");
-        }
     }
   }
  }
