@@ -65,16 +65,16 @@ namespace rcpp
             Console.Write("\n");
             Console.WriteLine("First Name > ");  
             firstName = Console.ReadLine();
-            initialList.Add(Console.ReadLine());
-            lastName = Console.ReadLine();
+            initialList.Add(firstName);
             Console.WriteLine("Last Name >");
-            initialList.Add(Console.ReadLine()); 
+            lastName = Console.ReadLine();
+            initialList.Add(lastName); 
             Console.WriteLine("User/Nickname >");
             username = Console.ReadLine();
-            initialList.Add(Console.ReadLine());
+            initialList.Add(username);
             Console.WriteLine("Year of Birth (Optional) >");
             yearOfBirth = Console.ReadLine();
-            initialList.Add(Console.ReadLine());
+            initialList.Add(yearOfBirth);
             Console.WriteLine("Additional Words (Optional) [Separated by ,] >");
                 foreach(var x in Console.ReadLine().Split(','))
                 {
