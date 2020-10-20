@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "rcpp/1.0.0": {
+        "dependencies": {
+          "TextToAsciiArt": "1.0.14.15"
+        },
+        "runtime": {
+          "rcpp.dll": {}
+        }
+      },
+      "TextToAsciiArt/1.0.14.15": {
+        "runtime": {
+          "lib/netstandard2.0/TextToAsciiArt.dll": {
+            "assemblyVersion": "1.0.14.15",
+            "fileVersion": "1.0.14.15"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "rcpp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TextToAsciiArt/1.0.14.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TJhZ1zeghf8Nc1wvAfvPLcDVX9GIupaDguB/YUziOtHvVXINRbnAbzu9Fgux88y9pDT7OqhGGo/ebngsU+tOpg==",
+      "path": "texttoasciiart/1.0.14.15",
+      "hashPath": "texttoasciiart.1.0.14.15.nupkg.sha512"
+    }
+  }
+}

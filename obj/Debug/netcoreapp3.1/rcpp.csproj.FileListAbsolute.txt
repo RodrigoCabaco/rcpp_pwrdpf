@@ -1,0 +1,15 @@
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\rcpp.exe
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\rcpp.deps.json
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\rcpp.runtimeconfig.json
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\rcpp.runtimeconfig.dev.json
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\rcpp.dll
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\rcpp.pdb
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.csprojAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.AssemblyInfo.cs
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.dll
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.pdb
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.genruntimeconfig.cache
+C:\Users\Rodrigo\Desktop\rcpp\bin\Debug\netcoreapp3.1\TextToAsciiArt.dll
+C:\Users\Rodrigo\Desktop\rcpp\obj\Debug\netcoreapp3.1\rcpp.csproj.CopyComplete

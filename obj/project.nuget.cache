@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zAdOS0s+dJjoRt7an/NPb5oKxo/cFpfz3XVPsVABl7vgsYwh+WwZulA6/MhpJB058LTz2xir37G+W1iIBCU/2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rodrigo\\Desktop\\rcpp\\rcpp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\texttoasciiart\\1.0.14.15\\texttoasciiart.1.0.14.15.nupkg.sha512"
+  ],
+  "logs": []
+}

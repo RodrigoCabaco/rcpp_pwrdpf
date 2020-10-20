@@ -1,0 +1,102 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TextToAsciiArt/1.0.14.15": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/TextToAsciiArt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/TextToAsciiArt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TextToAsciiArt/1.0.14.15": {
+      "sha512": "TJhZ1zeghf8Nc1wvAfvPLcDVX9GIupaDguB/YUziOtHvVXINRbnAbzu9Fgux88y9pDT7OqhGGo/ebngsU+tOpg==",
+      "type": "package",
+      "path": "texttoasciiart/1.0.14.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/TextToAsciiArt.dll",
+        "texttoasciiart.1.0.14.15.nupkg.sha512",
+        "texttoasciiart.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "TextToAsciiArt >= 1.0.14.15"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "c:\\Users\\Rodrigo\\Desktop\\rcpp\\rcpp.csproj",
+      "projectName": "rcpp",
+      "projectPath": "c:\\Users\\Rodrigo\\Desktop\\rcpp\\rcpp.csproj",
+      "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Rodrigo\\Desktop\\rcpp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Rodrigo\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "TextToAsciiArt": {
+            "target": "Package",
+            "version": "[1.0.14.15, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
