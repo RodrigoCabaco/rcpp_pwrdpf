@@ -20,7 +20,7 @@ sudo apt-get install -y dotnet-runtime-3.1
 
 dotnet run
 
-cp obj/Debug/netcoreapp3.1/* 
+cp obj/Debug/netcoreapp3.1/*    
 
 
 clear
