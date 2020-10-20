@@ -96,14 +96,35 @@ namespace rcpp
             generateList.Close();
             foreach(var f in initialList){
                 foreach(var l in initialList){
+                    int counter = passwordList.Count;
                     generateList = File.AppendText(firstName+"_"+lastName+".txt");
                     passwordList.Add(f+l);
+                     counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+"_"+l);
+                     counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+"_"+l+"_"); 
+                     counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+l+"_");
+                     counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f);
+                     counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(l);
-                    int counter = passwordList.Count;
+                    counter = passwordList.Count;
                     counter--;
                     Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
                     generateList.WriteLine(passwordList[counter]);
@@ -112,20 +133,50 @@ namespace rcpp
                     {
                     generateList = File.AppendText(firstName+"_"+lastName+".txt");
                     passwordList.Add(f+l+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+"_"+l+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+"_"+l+"_"+i); 
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+l+"_"+i);      
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+"_"+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(l+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(f+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(l+"_"+i);       
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(firstName+"_"+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                     passwordList.Add(lastName+"_"+i);
+                      counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
+                    passwordList.Add(firstName+lastName+"_"+i);   
                     counter = passwordList.Count;
                     counter--;
                     Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
                     generateList.WriteLine(passwordList[counter]);
-                    generateList.Close();    
                     }
                   /*  for(int j = 0;j<80;j++)
                     {
@@ -153,26 +204,71 @@ namespace rcpp
 
         }
                 passwordList.Add(lastName+firstName+yearOfBirth);
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(lastName+firstName+yearOfBirth+"?");
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(lastName+"_"+firstName+yearOfBirth);
-            
+             counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                 passwordList.Add(firstName+"_"+lastName+yearOfBirth);
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(firstName+lastName+yearOfBirth);
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(firstName+username+yearOfBirth+"_");
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(username+"_"+firstName+yearOfBirth);
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(username+yearOfBirth+"?");
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
             
                 passwordList.Add(lastName+username+"_"+yearOfBirth);
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
 
                 passwordList.Add(username+"_"+yearOfBirth);
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
                 
                 passwordList.Add(username+"_"+yearOfBirth+"?");
+                 counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
+                                        generateList.Close();    
+
     }
   }
  }
