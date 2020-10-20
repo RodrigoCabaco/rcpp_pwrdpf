@@ -92,12 +92,20 @@ namespace rcpp
         }
         void GenerateWorldList()
         {
+            StreamWriter generateList = File.CreateText(firstName+"_"+lastName+".txt");
+            generateList.Close();
             foreach(var f in initialList){
                 foreach(var l in initialList){
+                    generateList = File.AppendText(firstName+"_"+lastName+".txt");
                     passwordList.Add(f+l);
                     passwordList.Add(f+"_"+l);
                     passwordList.Add(f+"_"+l+"_");
                     passwordList.Add(f+l+"_");
+                    int counter = passwordList.Count;
+                    counter--;
+                    Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
+                    generateList.WriteLine(passwordList[counter]);
+                    generateList.Close();
                 }
             }
                 passwordList.Add(lastName+firstName+yearOfBirth);
@@ -121,7 +129,6 @@ namespace rcpp
                 passwordList.Add(username+"_"+yearOfBirth);
                 
                 passwordList.Add(username+"_"+yearOfBirth+"?");
-
         }
     }
 }
