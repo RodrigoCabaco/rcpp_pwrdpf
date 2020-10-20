@@ -117,7 +117,7 @@ namespace rcpp
                     passwordList.Add(lastName+"_"+i);
                     passwordList.Add(firstName+lastName+"_"+i);       
                     }
-                    for(int j = 0;j<80;j++)
+                  /*  for(int j = 0;j<80;j++)
                     {
                     int i = j + 1960;
                     passwordList.Add(f+l+i);
@@ -138,7 +138,7 @@ namespace rcpp
                     generateList.WriteLine(passwordList[counter]);
                     generateList.Close();
 
-                }
+                }*/
             }
                 passwordList.Add(lastName+firstName+yearOfBirth);
             
