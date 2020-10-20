@@ -121,7 +121,6 @@ namespace rcpp
                     passwordList.Add(l+"_"+i);       
                     passwordList.Add(firstName+"_"+i);
                     passwordList.Add(lastName+"_"+i);
-                    passwordList.Add(firstName+lastName+"_"+i);   
                     counter = passwordList.Count;
                     counter--;
                     Console.WriteLine("Generating: "+passwordList[counter] +" ("+counter+")");
